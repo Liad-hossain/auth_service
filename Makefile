@@ -65,4 +65,4 @@ run:
 
 
 clean:
-	docker compose -f ./deploy/docker-compose.yml down --rmi all --volumes --remove-orphans
+	docker compose -f ./deploy/docker-compose.yml down --rmi all

@@ -9,7 +9,7 @@ class GunicornApplication(BaseApplication):
         self.options = {
             "bind": f"{host}:{port}",
             "workers": workers,
-            "worker_class": "uvicorn.workers.UvicornWorker",  # ASGI worker for FastAPI
+            "worker_class": "uvicorn.workers.UvicornWorker",
             **kwargs,
         }
         self.application = app

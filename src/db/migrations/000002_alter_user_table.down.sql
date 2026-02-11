@@ -1,0 +1,6 @@
+BEGIN TRANSACTION;
+
+ALTER TABLE users
+DROP COLUMN is_verified;
+
+COMMIT;

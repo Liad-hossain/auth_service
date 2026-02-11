@@ -11,6 +11,7 @@ def main() -> None:
             host=settings.host,
             port=settings.port,
             reload=True,
+            factory=True,
         )
     else:
         GunicornApplication(
@@ -18,6 +19,7 @@ def main() -> None:
             host=settings.host,
             port=settings.port,
             workers=settings.worker_count,
+            factory=True,
         ).run()
 
 
